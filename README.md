@@ -33,7 +33,7 @@ This project follows **Clean Architecture** principles.
 
 The diagram below proves that all dependencies point toward the domain core.
 
-![Dependency Graph](food-ordering-system/target/dependency-graph.png)
+![Dependency Graph](docs/dependency-graph.png)
 
 This confirms:
 - Domain core is independent
