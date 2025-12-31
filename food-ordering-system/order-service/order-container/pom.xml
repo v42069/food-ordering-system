@@ -19,6 +19,25 @@
     </properties>
 
     <dependencies>
-
+        <dependency>
+            <groupId>com.v</groupId>
+            <artifactId>order-domain-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.v</groupId>
+            <artifactId>order-application-service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.v</groupId>
+            <artifactId>order-application</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.v</groupId>
+            <artifactId>order-data-access</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.v</groupId>
+            <artifactId>order-messaging</artifactId>
+        </dependency>
     </dependencies>
 </project>

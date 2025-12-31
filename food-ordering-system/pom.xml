@@ -9,6 +9,13 @@
 
   <name>food-ordering-system</name>
   <url>http://maven.apache.org</url>
+  <modules>
+    <module>order-service</module>
+    <module>order-service/domain-module</module>
+    <module>order-service/order-container</module>
+    <module>order-service/order-data-access</module>
+    <module>order-service/order-messaging</module>
+  </modules>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -19,14 +26,54 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <order.domain.core.version>1.0-SNAPSHOT</order.domain.core.version>
+    <order.application.service.version>1.0-SNAPSHOT</order.application.service.version>
+    <order.application.version>1.0-SNAPSHOT</order.application.version>
+    <order.container.version>1.0-SNAPSHOT</order.container.version>
+    <order.data.access.version>1.0-SNAPSHOT</order.data.access.version>
+    <order.messaging.version>1.0-SNAPSHOT</order.messaging.version>
+    <order.service.version>1.0-SNAPSHOT</order.service.version>
   </properties>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.v</groupId>
+        <artifactId>order-domain-core</artifactId>
+        <version>${order.domain.core.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.v</groupId>
+        <artifactId>order-application-service</artifactId>
+        <version>${order.application.service.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.v</groupId>
+        <artifactId>order-application</artifactId>
+        <version>${order.application.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.v</groupId>
+        <artifactId>order-data-access</artifactId>
+        <version>${order.data.access.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.v</groupId>
+        <artifactId>order-messaging</artifactId>
+        <version>${order.messaging.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 </project>

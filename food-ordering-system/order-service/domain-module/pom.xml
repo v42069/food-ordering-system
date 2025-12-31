@@ -8,20 +8,20 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>order-data-access</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>domain-module</artifactId>
+    <packaging>pom</packaging>
 
-    <name>order-data-access</name>
+    <name>domain-module</name>
     <url>http://maven.apache.org</url>
+    <modules>
+        <module>order-domain-core</module>
+        <module>order-application-service</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.v</groupId>
-            <artifactId>order-application-service</artifactId>
-        </dependency>
     </dependencies>
 </project>
