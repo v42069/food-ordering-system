@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/food-ordering-system/order-service/domain-module/order-application-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/food-ordering-system/order-service/domain-module/order-domain-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/food-ordering-system/order-service/domain-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/food-ordering-system/order-service/domain-module/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/food-ordering-system/order-service/order-application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/food-ordering-system/order-service/order-container/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/food-ordering-system/order-service/order-data-access/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/food-ordering-system/order-service/order-messaging/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/food-ordering-system/order-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/food-ordering-system/order-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/food-ordering-system/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/food-ordering-system/src/main/resources" charset="UTF-8" />
   </component>
