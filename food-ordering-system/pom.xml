@@ -33,6 +33,7 @@
     <order.data.access.version>1.0-SNAPSHOT</order.data.access.version>
     <order.messaging.version>1.0-SNAPSHOT</order.messaging.version>
     <order.service.version>1.0-SNAPSHOT</order.service.version>
+    <common.domain.version>1.0-SNAPSHOT</common.domain.version>
   </properties>
 
   <dependencyManagement>
@@ -61,6 +62,11 @@
         <groupId>com.v</groupId>
         <artifactId>order-messaging</artifactId>
         <version>${order.messaging.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.v</groupId>
+        <artifactId>common-domain</artifactId>
+        <version>${common.domain.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
