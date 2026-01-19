@@ -1,19 +1,38 @@
 package com.v.food.ordering.orderservice.valueobject;
 
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
+
 
 import java.util.Objects;
 import java.util.UUID;
 
-@Getter
-@AllArgsConstructor
 public class StreetAddress {
 
     private final UUID id;
 
     private final String street;
+
+    public StreetAddress(UUID id, String street, String postalCode, String city) {
+        this.id = id;
+        this.street = street;
+        this.postalCode = postalCode;
+        this.city = city;
+    }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public String getPostalCode() {
+        return postalCode;
+    }
+
+    public String getCity() {
+        return city;
+    }
 
     private final String postalCode;
 

@@ -4,10 +4,27 @@ import com.v.food.ordering.common.entity.BaseEntity;
 import com.v.food.ordering.common.valueobjects.Money;
 import com.v.food.ordering.common.valueobjects.OrderId;
 import com.v.food.ordering.orderservice.valueobject.OrderItemId;
-import lombok.Getter;
 
-@Getter
 public class OrderItem extends BaseEntity<OrderItemId> {
+    public OrderId getOrderId() {
+        return orderId;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public Money getPrice() {
+        return price;
+    }
+
+    public Money getSubTotal() {
+        return subTotal;
+    }
 
     private OrderId orderId;
     private final Product product;
@@ -47,7 +64,7 @@ public class OrderItem extends BaseEntity<OrderItemId> {
         private Money price;
         private Money subTotal;
 
-        private Builder() {
+        Builder() {
         }
 
         public Builder orderItemId(OrderItemId val) {
