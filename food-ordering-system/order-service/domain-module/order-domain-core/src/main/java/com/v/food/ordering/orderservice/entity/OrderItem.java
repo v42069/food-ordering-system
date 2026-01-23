@@ -6,26 +6,6 @@ import com.v.food.ordering.common.valueobjects.OrderId;
 import com.v.food.ordering.orderservice.valueobject.OrderItemId;
 
 public class OrderItem extends BaseEntity<OrderItemId> {
-    public OrderId getOrderId() {
-        return orderId;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public Product getProduct() {
-        return product;
-    }
-
-    public Money getPrice() {
-        return price;
-    }
-
-    public Money getSubTotal() {
-        return subTotal;
-    }
-
     private OrderId orderId;
     private final Product product;
     private final int quantity;
@@ -95,5 +75,25 @@ public class OrderItem extends BaseEntity<OrderItemId> {
         public OrderItem build() {
             return new OrderItem(this);
         }
+    }
+
+    public OrderId getOrderId() {
+        return orderId;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public Money getPrice() {
+        return price;
+    }
+
+    public Money getSubTotal() {
+        return subTotal;
     }
 }
